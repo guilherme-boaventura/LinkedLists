@@ -1,12 +1,12 @@
 package lists;
 
-public class ListaSimples {
+public class ListaSimples { //singly linket list
 	No inicio = null; //pointer to the first item
 	int size = 0;
 
 	public void inserirInicio(String info) {  //insert an item on the beggining of the list
 		if(isFull()) {
-			System.out.println("A lista j· est· cheia");
+			System.out.println("A lista j√° est√° cheia");
 		}else {
 			No no = new No();
 			no.info = info;
@@ -18,7 +18,7 @@ public class ListaSimples {
 
 	public void inserirMeio (String info) {  //insert an item on the second position of the list
 		if(isFull()) {
-			System.out.println("A lista j· est· cheia");
+			System.out.println("A lista j√° est√° cheia");
 		}else {
 			No no = new No();
 			no.info = info;
@@ -30,7 +30,7 @@ public class ListaSimples {
 
 	public void inserirFim (String info) { //insert an item on the end of the list
 		if(isFull()) {
-			System.out.println("A lista j· est· cheia");
+			System.out.println("A lista j√° est√° cheia");
 		}else {
 			No no = new No();
 			no.info = info;
@@ -104,12 +104,12 @@ public class ListaSimples {
 		int count = 0;
 		while (count < this.size) {
 			if(local.info.equals(info)){
-				return "O nome " + info + " est· na lista";
+				return "O nome " + info + " est√° na lista";
 			}
 			local = local.next;
 			count++;
 		}
-		return "O nome " + info + " n„o est· na lista";
+		return "O nome " + info + " n√£o est√° na lista";
 	}
 
 	public boolean isFull () {
