@@ -1,6 +1,6 @@
 package lists;
 
-public class ListaDupla {
+public class ListaDupla { //duply linked list
 	No first = null; //pointer to the first item
 	No last = null; //pointer to the last item
 	int length = 0;
